@@ -1,0 +1,124 @@
+/* 
+Theme Name:     Pictorial Child
+Description:    Pictorial Child - Used for the document repo for the city of philadelphia.
+Author:         Karissa Demi
+Template:       pictorial
+Version:        .1
+*/
+
+/*  
+Copyright 2013 WP Strap Code. (email : info@wpstrapcode.com)
+
+Pictorial is built on Underscores (_s) starter theme http://underscores.me/ - 
+Copyright: Automattic, automattic.com - Licensed under GPLv2 or later
+
+This program is free software; you can redistribute it and/or modify
+it under the terms of the GNU General Public License version 3,
+as published by the Free Software Foundation.
+
+You may NOT assume that you can use any other version of the GPL.
+
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License
+along with this program; if not, write to the Free Software
+Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301
+USA
+
+The license for this software can also likely be found here:
+http://www.gnu.org/licenses/gpl-3.0.html
+*/
+
+@import url("../pictorial/style.css");
+
+/*general*/
+body {
+    background-color:#004990 !important;
+	overflow:hidden;
+}
+.widget-title, a {
+    color:#006a66;
+}
+
+.entry-title {
+    color: #004990;
+}
+
+#top-bar .account-banner {
+    text-align:right !important;
+}
+
+#respond, #comments {
+    display:none;
+}
+
+.ui.button {
+	display:block;
+}
+
+.ui.buttons .button{
+	float:none;
+}
+.ui.buttons .or{
+	display: none;
+}
+
+.nav-collapse, .nav-collapse.collapse {
+	height:auto !important;
+}
+
+/* Text elements */
+    .hentry, 
+	.entry-meta, 
+	h1, 
+	h2, 
+	h3, 
+	h4, 
+	h5, 
+	p, 
+	ul, 
+	ol, 
+	li {
+       -webkit-hyphens: none;
+       -moz-hyphens: none;
+       hyphens: none;  
+}
+
+/*buddypress*/
+h2.doc-title {
+	width:100%;
+}
+
+form{
+	margin:0;
+}
+
+#docs-filter-section-tags::before{
+	content:"Filter by another tag: ";
+}
+/*hide a bunch of stuff we don't want to use*/
+#docs-filter-section-attachments, p#docs-filter-meta, #buddypress div#item-header, #buddypress div#object-nav.item-list-tabs, p.currently-viewing{
+	display:none !important;
+}
+.selected{
+	font-size:110%;
+	font-weight: bold;
+}
+/*login for nav*/
+.navbar .nav {
+	width:100%;
+}
+
+.navbar .nav > li:last-child {
+	position:absolute;
+	right:0;
+}
+
+@media(max-width: 979px){
+	.navbar .nav > li:last-child {
+		display:none;
+	}
+}
